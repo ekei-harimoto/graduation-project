@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Harimoto Ekei</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- js -->
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="l_header">
+      <h1 class="l_header-logo">
+        <a href="index.html" class="">Ekei</a>
+      </h1>
+      <nav class="l_header-nav js_navigation">
+        <ul class="l_header-nav_list">
+          <li class="l_header-nav_item">
+            <a href="index.html" class="l_header-nav_link">TOP</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="puzzle.html" class="l_header-nav_link">PUZZLE</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="stereogram.html" class="l_header-nav_link">STEREOGRAM</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="movie.html" class="l_header-nav_link">MOVIE</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="m_hamburger js_hamburger">
+        <span class="m_hamburger-bar"></span>
+        <span class="m_hamburger-bar"></span>
+        <span class="m_hamburger-bar"></span>
+      </button>
+    </header>
+
+    <main class="l_main2">
+      <h3 class="top_lineup-post_title1">#1 PUZZLE</h3>
+      <div class="message_box1">
+        <p class="message_copy">
+          please complete<br />puzzles and get<br />the messge.
+        </p>
+      </div>
+
+      <div id="eye">
+        <vue-scratchable>
+          <img src="img/puzzle1.jpg" alt="" />
+          <div class="secret">I love your<br />gentle gaze,</div>
+        </vue-scratchable>
+      </div>
+      <div id="smile">
+        <vue-scratchable>
+          <img src="img/puzzle2.jpg" alt="" />
+          <div class="secret left1">your fond smile</div>
+        </vue-scratchable>
+      </div>
+      <div id="humor">
+        <vue-scratchable>
+          <img src="img/puzzle3.jpg" alt="" />
+          <div class="secret left2">and your humor.</div>
+        </vue-scratchable>
+      </div>
+
+      <div class="message_box2 plus2">
+        <p class="message_copy">
+          I hope your day will<br />be a little happier.
+        </p>
+      </div>
+    </main>
+
+    <footer class="l_footer">
+      <p class="l_footer_logo">Ekei</p>
+      <p class="explain">A girl in Japan</p>
+      <ul class="l_footer_list">
+        <li class="l_footer_item">
+          <a href="index.html" class="l_footer_link">- TOP</a>
+        </li>
+        <li class="l_footer_item">
+          <a href="puzzle.html" class="l_footer_link">- PUZZLE</a>
+        </li>
+        <li class="l_footer_item">
+          <a href="stereogram.html" class="l_footer_link">- STEREOGRAM</a>
+        </li>
+        <li class="l_footer_item">
+          <a href="movie.html" class="l_footer_link">- MOVIE</a>
+        </li>
+      </ul>
+      <div id="wrapper">
+        <canvas id="waveCanvas"></canvas>
+        <div class="footer_box">
+          <p class="l_footer-copyright">&copy; 2023 Harimoto Ekei</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/wave.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-scratchable@0.3.2/dist/vue-scratchable.umd.min.js"></script>
+    <script>
+      const VueScratchable = window["vue-scratchable"];
+
+      Vue.component("vue-scratchable", VueScratchable);
+      new Vue({
+        el: "#eye",
+      });
+      Vue.component("vue-scratchable", VueScratchable);
+      new Vue({
+        el: "#smile",
+      });
+      Vue.component("vue-scratchable", VueScratchable);
+      new Vue({
+        el: "#humor",
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Harimoto Ekei</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- js -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="l_header">
+      <h1 class="l_header-logo">
+        <a href="index.html" class="">Ekei</a>
+      </h1>
+      <nav class="l_header-nav js_navigation">
+        <ul class="l_header-nav_list">
+          <li class="l_header-nav_item">
+            <a href="index.html" class="l_header-nav_link">TOP</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="puzzle.html" class="l_header-nav_link">PUZZLE</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="stereogram.html" class="l_header-nav_link">STEREOGRAM</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="movie.html" class="l_header-nav_link">MOVIE</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="m_hamburger js_hamburger">
+        <span class="m_hamburger-bar"></span>
+        <span class="m_hamburger-bar"></span>
+        <span class="m_hamburger-bar"></span>
+      </button>
+    </header>
+
+    <section class="separate">
+      <h3 class="top_lineup-post_title1">#2 STEREOGRAM</h3>
+      <div class="message_box1">
+        <p class="message_copy">
+          If you focus far away,<br />people can be seen<br />
+          popping out.<br />
+        </p>
+        <div class="scrolldown"><span>Scroll</span></div>
+      </div>
+    </section>
+
+    <div class="parallax">
+      <div class="card1"></div>
+      <div class="card2"></div>
+    </div>
+
+    <section class="people hide">
+      <article class="area1">
+        <img src="img/Julia.jpg" alt="" />
+      </article>
+
+      <article class="area2">
+        <img src="img/Brad.jpg" alt="" />
+      </article>
+
+      <article class="area3">
+        <img src="img/Met-Gala.jpg" alt="" />
+      </article>
+    </section>
+
+    <div class="parallax"></div>
+
+    <div class="message_box2 hide plus1">
+      <p class="message_copy">Please take care<br />of your eye health.</p>
+    </div>
+
+    <footer class="l_footer hide">
+      <p class="l_footer_logo">Ekei</p>
+      <p class="explain">A girl in Japan</p>
+      <ul class="l_footer_list">
+        <li class="l_footer_item">
+          <a href="index.html" class="l_footer_link">- TOP</a>
+        </li>
+        <li class="l_footer_item">
+          <a href="puzzle.html" class="l_footer_link">- PUZZLE</a>
+        </li>
+        <li class="l_footer_item">
+          <a href="stereogram.html" class="l_footer_link">- STEREOGRAM</a>
+        </li>
+        <li class="l_footer_item">
+          <a href="movie.html" class="l_footer_link">- MOVIE</a>
+        </li>
+      </ul>
+      <div id="wrapper">
+        <canvas id="waveCanvas"></canvas>
+        <div class="footer_box">
+          <p class="l_footer-copyright">&copy; 2023 Harimoto Ekei</p>
+        </div>
+      </div>
+      <script src="js/wave.js"></script>
+    </footer>
+  </body>
+</html>
